@@ -35,3 +35,5 @@ Route::view('testimonial', 'front.testimonial')->name('testimonial');
 });
 
 require __DIR__.'/auth.php';
+
+require __DIR__.'/admin.php';
