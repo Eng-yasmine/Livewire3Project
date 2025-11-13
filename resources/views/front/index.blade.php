@@ -1,5 +1,8 @@
 @extends('front.master')
 
+@section('home-active', 'active')
+@section('title', 'Home')
+
 @section('header')
     @include('front.partials.mainheader')
 @endsection

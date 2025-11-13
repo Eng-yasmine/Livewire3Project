@@ -1,5 +1,8 @@
 @extends('front.master')
 
+@section('pages-active', 'active')
+@section('title', 'Testimonial')
+
 @section('header')
     @include('front.partials.sub-header', ['page_title' => 'Testimonial'])
 @endsection
