@@ -24,7 +24,14 @@ use Illuminate\Support\Facades\Route;
  */
 Route::prefix('/')->name('front.')->group(function (){
 //===============home================================
-Route::view('/', 'front.index')->name('index');
+Route::view('home', 'front.index')->name('index');
+Route::view('about', 'front.about')->name('about');
+Route::view('contact', 'front.contact')->name('contact');
+Route::view('service', 'front.service')->name('service');
+Route::view('project', 'front.project')->name('project');
+Route::view('team', 'front.team')->name('team');
+Route::view('testimonial', 'front.testimonial')->name('testimonial');
+// Route::view('404', 'front.404')->name('404');
 });
 
 require __DIR__.'/auth.php';

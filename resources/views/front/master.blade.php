@@ -19,7 +19,9 @@
         <div class="container-xxl position-relative p-0">
             @include('front.partials.navbar')
 
-            @include('front.partials.mainheader')
+            @yield('header')
+          
+
         </div>
         <!-- Navbar & Hero End -->
 
@@ -37,8 +39,7 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i
-                class="bi bi-arrow-up"></i></a>
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
 
     @include('front.partials.scripts')

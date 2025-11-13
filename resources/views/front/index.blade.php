@@ -1,5 +1,8 @@
 @extends('front.master')
 
+@section('header')
+    @include('front.partials.mainheader')
+@endsection
 @section('front-content')
         <!-- Feature Start -->
         <div class="container-xxl py-5">
@@ -245,7 +248,7 @@
                             <img class="img-fluid w-100" src="{{ asset('front-assets/img/portfolio-1.jpg') }}"
                                 alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg"
+                                <a class="btn btn-square btn-outline-light mx-1" href="{{asset('front-assets/img/portfolio-1.jpg')}}"
                                     data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i
                                         class="fa fa-link"></i></a>
@@ -263,7 +266,7 @@
                             <img class="img-fluid w-100" src="{{ asset('front-assets/img/portfolio-2.jpg') }}"
                                 alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg"
+                                <a class="btn btn-square btn-outline-light mx-1" href="{{asset('front-assets/img/portfolio-2.jpg')}}"
                                     data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i
                                         class="fa fa-link"></i></a>
@@ -281,7 +284,7 @@
                             <img class="img-fluid w-100" src="{{ asset('front-assets/img/portfolio-3.jpg') }}"
                                 alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg"
+                                <a class="btn btn-square btn-outline-light mx-1" href="{{asset('front-assets/img/portfolio-3.jpg')}}"
                                     data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i
                                         class="fa fa-link"></i></a>
@@ -296,9 +299,9 @@
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.1s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-4.jpg" alt="">
+                            <img class="img-fluid w-100" src="{{asset('front-assets/img/portfolio-4.jpg')}}" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-4.jpg"
+                                <a class="btn btn-square btn-outline-light mx-1" href="{{asset('front-assets/img/portfolio-4.jpg')}}"
                                     data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i
                                         class="fa fa-link"></i></a>
@@ -313,9 +316,9 @@
                 <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-5.jpg" alt="">
+                            <img class="img-fluid w-100" src="{{asset('front-assets/img/portfolio-5.jpg')}}" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-5.jpg"
+                                <a class="btn btn-square btn-outline-light mx-1" href="{{asset('front-assets/img/portfolio-5.jpg')}}    "
                                     data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i
                                         class="fa fa-link"></i></a>
@@ -330,9 +333,9 @@
                 <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.5s">
                     <div class="rounded overflow-hidden">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/portfolio-6.jpg" alt="">
+                            <img class="img-fluid w-100" src="{{asset('front-assets/img/portfolio-6.jpg')}}" alt="">
                             <div class="portfolio-overlay">
-                                <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-6.jpg"
+                                <a class="btn btn-square btn-outline-light mx-1" href="{{asset('front-assets/img/portfolio-6.jpg')}}"
                                     data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                 <a class="btn btn-square btn-outline-light mx-1" href=""><i
                                         class="fa fa-link"></i></a>
@@ -362,7 +365,7 @@
                         diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem
                         sit clita duo justo.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg"
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('front-assets/img/testimonial-1.jpg')}}"
                             style="width: 65px; height: 65px;">
                         <div class="ps-4">
                             <h5 class="mb-1">Client Name</h5>
@@ -375,7 +378,7 @@
                         diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem
                         sit clita duo justo.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg"
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('front-assets/img/testimonial-2.jpg')}}"
                             style="width: 65px; height: 65px;">
                         <div class="ps-4">
                             <h5 class="mb-1">Client Name</h5>
@@ -388,7 +391,7 @@
                         diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit sed stet lorem
                         sit clita duo justo.</p>
                     <div class="d-flex align-items-center">
-                        <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg"
+                        <img class="img-fluid flex-shrink-0 rounded-circle" src="{{asset('front-assets/img/testimonial-3.jpg')}}"
                             style="width: 65px; height: 65px;">
                         <div class="ps-4">
                             <h5 class="mb-1">Client Name</h5>
@@ -414,7 +417,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item bg-light rounded">
                         <div class="text-center border-bottom p-4">
-                            <img class="img-fluid rounded-circle mb-4" src="img/team-1.jpg" alt="">
+                            <img class="img-fluid rounded-circle mb-4" src="{{asset('front-assets/img/team-1.jpg')}}" alt="">
                             <h5>John Doe</h5>
                             <span>CEO & Founder</span>
                         </div>
@@ -429,7 +432,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item bg-light rounded">
                         <div class="text-center border-bottom p-4">
-                            <img class="img-fluid rounded-circle mb-4" src="img/team-2.jpg" alt="">
+                            <img class="img-fluid rounded-circle mb-4" src="{{asset('front-assets/img/team-2.jpg')}}" alt="">
                             <h5>Jessica Brown</h5>
                             <span>Web Designer</span>
                         </div>
@@ -444,7 +447,7 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item bg-light rounded">
                         <div class="text-center border-bottom p-4">
-                            <img class="img-fluid rounded-circle mb-4" src="img/team-3.jpg" alt="">
+                            <img class="img-fluid rounded-circle mb-4" src="{{asset('front-assets/img/team-3.jpg')}}" alt="">
                             <h5>Tony Johnson</h5>
                             <span>SEO Expert</span>
                         </div>
