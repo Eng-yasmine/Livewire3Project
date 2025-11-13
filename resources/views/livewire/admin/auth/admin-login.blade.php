@@ -29,6 +29,13 @@
         </div>
     </div>
     <div class="mb-3">
-        <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+        <button class="btn btn-primary d-grid w-100" type="submit">
+            Sign in
+           <div class="d-flex justify-content-center align-items-center">
+           <span wire:loading wire:target="save" class="spinner-border spinner-border-sm text-white" role="status">
+           <span class="visually-hidden">Loading...</span>
+       </span>
+        </div>
+        </button>
     </div>
 </form>
