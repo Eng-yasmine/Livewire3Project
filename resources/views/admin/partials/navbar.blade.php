@@ -80,12 +80,7 @@ id="layout-navbar">
                 <li>
                     <div class="dropdown-divider"></div>
                 </li>
-                <li>
-                    <a class="dropdown-item" href="auth-login-basic.html">
-                        <i class="bx bx-power-off me-2"></i>
-                        <span class="align-middle">Log Out</span>
-                    </a>
-                </li>
+                @livewire('admin.auth.admin-logout')
             </ul>
         </li>
         <!--/ User -->
