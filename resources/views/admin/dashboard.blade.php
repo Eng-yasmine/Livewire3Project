@@ -1,4 +1,7 @@
 @extends('admin.master')
+
+@section('active-menu', 'active')
+
 @section('admin-title', 'Dashboard')
 
 
