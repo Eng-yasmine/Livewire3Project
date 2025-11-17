@@ -14,11 +14,34 @@ class SkillsData extends Component
 
     protected $listeners = [
         'skillCreated' => '$refresh',
+        'skillUpdated' => '$refresh',
     ];
 
     public function updatingSearch(): void
     {
         $this->resetPage();
+    }
+
+    public function editSkill(int $id): void
+    {
+        $this->dispatch('editSkill', skillId: $id)->to(SkillsUpdate::class);
+    }
+
+    public function deleteSkill(int $id): void
+    {
+        Skill::where('id', $id)->delete();
+        $this->resetPage();
+        $this->dispatch('skillUpdated');
+    }
+
+    public function confirmDelete(int $id): void
+    {
+        $this->dispatch('confirmDelete', skillId: $id)->to(SkillsDelete::class);
+    }
+
+    public function showSkill(int $id): void
+    {
+        $this->dispatch('showSkill', skillId: $id)->to(SkillsShow::class);
     }
 
     public function render()

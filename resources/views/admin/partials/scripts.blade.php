@@ -50,3 +50,6 @@
       });
   });
 </script>
+
+<!-- Vite for Echo (Reverb) -->
+@vite(['resources/css/app.css', 'resources/js/app.js'])

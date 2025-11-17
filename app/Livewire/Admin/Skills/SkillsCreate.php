@@ -29,6 +29,8 @@ class SkillsCreate extends Component
 
         $this->reset(['name', 'percentage']);
 
+        // close the modal
+        $this->dispatch('close-modal'); 
         // Tell the listing component to refresh
         $this->dispatch('skillCreated');
     }
